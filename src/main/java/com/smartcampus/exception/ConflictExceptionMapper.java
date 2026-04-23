@@ -9,7 +9,6 @@ import jakarta.ws.rs.ext.Provider;
 public class ConflictExceptionMapper implements ExceptionMapper<ConflictException> {
     @Override
     public Response toResponse(ConflictException exception) {
-        ErrorMessage error = new ErrorMessage(
             Response.Status.CONFLICT.getStatusCode(),
             "Conflict",
             exception.getMessage()
