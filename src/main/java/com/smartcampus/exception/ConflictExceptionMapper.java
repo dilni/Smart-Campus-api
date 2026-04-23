@@ -1,4 +1,4 @@
-
+package com.smartcampus.exception;
 
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
