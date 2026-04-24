@@ -371,3 +371,17 @@
 * ##### Internal system details are exposed
 * ##### Help attackers spot vulnerabilities
 * ##### Should be replaced with generic errors
+
+##### Q3:
+
+##### Using JAX-RS filters for logging is advantageous because they provide a centralized and reusable way to handle cross-cutting concerns like request and response logging. Instead of adding Logger.info() statements inside every resource method, a single filter can automatically intercept all incoming requests and outgoing responses. This keeps the resource classes clean and focused only on business logic, improving overall code quality and maintainability.
+
+##### Filters also ensure consistency, since every request and response is logged in the same format without relying on developers to manually add logging in each method. This reduces the risk of missing logs or having inconsistent logging behavior across different endpoints. Additionally, if logging requirements change (e.g., adding headers or timestamps), updates only need to be made in one place.
+
+##### 
+
+* ##### Centralizes logging logic in one component
+* ##### Keeps resource methods clean and focused
+* ##### Ensures consistent logging across all endpoints
+* ##### Reduces code duplication and human error
+* ##### Makes future changes easier and more maintainable
